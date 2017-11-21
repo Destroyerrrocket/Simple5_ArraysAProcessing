@@ -1,7 +1,6 @@
 float[] posXCubes = new float[50];
 float[] posYCubes = new float[50];
 int[] randomNums = new int[4];
-boolean initialized = false;
 void setup () {
   size(800, 800);
   randomNums[0] = 50;
@@ -15,7 +14,7 @@ void draw () {
   drawCubes(posXCubes, posYCubes);
 }
 void moveBlocks (float[] PosX, float[] PosY) {
-  if (PosX[0] == 0 && initialized == false) {
+  if (PosX[0] == 0) {
     for (int i = 0; i <= (PosX.length - 1); i++) {
           PosX[i] = random(randomNums[0], randomNums[1]);
     }
