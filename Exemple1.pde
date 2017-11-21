@@ -1,12 +1,8 @@
 float[] posXCubes = new float[50];
 float[] posYCubes = new float[50];
-int[] randomNums = new int[4];
+final int[] randomNums = {50, width - 50, 50, height - 50};
 void setup () {
   size(800, 800);
-  randomNums[0] = 50;
-  randomNums[1] = width - 50;
-  randomNums[2] = 50;
-  randomNums[3] = height - 50;
 }
 void draw () {
   background(0);
