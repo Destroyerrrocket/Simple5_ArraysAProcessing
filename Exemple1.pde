@@ -9,13 +9,11 @@ void setup () {
   randomNums[2] = 50;
   randomNums[3] = height - 50;
 }
-
 void draw () {
   background(0);
   moveBlocks(posXCubes, posYCubes);
   drawCubes(posXCubes, posYCubes);
 }
-
 void moveBlocks (float[] PosX, float[] PosY) {
   if (PosX[0] == 0 && initialized == false) {
     for (int i = 0; i <= (PosX.length - 1); i++) {
